@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Prime67 Repair Service</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#162b50',
+                            900: '#0b1935',
+                            950: '#071024',
+                        },
+                        accent: {
+                            DEFAULT: '#ffcc00',
+                            hover: '#e6b800',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Oswald', 'Inter', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & Lucide Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: -0.01em;
+        }
+        .slanted-wedge {
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+        }
+        .slanted-card {
+            clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Utility Bar -->
+    <div class="bg-navy-950 text-slate-300 text-xs py-2 px-4 border-b border-navy-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-accent"></i> 67 Tech Plaza, Suite 400</span>
+                <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-3.5 h-3.5 text-accent"></i> Mon - Sat: 8:00 AM - 7:00 PM</span>
+            </div>
+            <div class="flex items-center gap-4 text-slate-400">
+                <span>Honest Bench Work • Zero Screw Surplus</span>
+                <span class="text-accent font-semibold">1.5 ★ Official Google Rating</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-navy-900 rounded flex items-center justify-center text-accent">
+                    <i data-lucide="wrench" class="w-6 h-6"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-heading font-extrabold text-2xl text-navy-900 tracking-tight leading-none">PRIME67</span>
+                    <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">REPAIR SERVICE</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 font-heading text-slate-700 font-semibold text-lg uppercase">
+                <a href="index.html" class="hover:text-navy-900 transition-colors">Home</a>
+                <a href="services.html" class="hover:text-navy-900 transition-colors">Services</a>
+                <a href="about.html" class="hover:text-navy-900 transition-colors">About Us</a>
+                <a href="contact.html" class="text-navy-900 border-b-2 border-accent pb-1">Contact</a>
+            </nav>
+
+            <!-- Phone Call Pill CTA -->
+            <div class="hidden sm:flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-accent text-navy-900 flex items-center justify-center shadow-sm">
+                    <i data-lucide="phone-call" class="w-5 h-5"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-[10px] uppercase font-bold text-slate-400 leading-tight">Emergency Hotline</span>
+                    <a href="tel:5556767677" class="font-heading text-lg font-bold text-navy-900 hover:text-navy-800 transition-colors">(555) 676-7677</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" aria-label="Toggle Navigation" class="md:hidden p-2 text-navy-900 focus:outline-none">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 text-white px-6 py-4 space-y-3 font-heading uppercase text-lg border-t border-navy-800">
+            <a href="index.html" class="block hover:text-accent">Home</a>
+            <a href="services.html" class="block hover:text-accent">Services</a>
+            <a href="about.html" class="block hover:text-accent">About Us</a>
+            <a href="contact.html" class="block text-accent font-bold">Contact</a>
+            <div class="pt-3 border-t border-navy-800 flex items-center gap-3">
+                <i data-lucide="phone" class="text-accent w-5 h-5"></i>
+                <span class="font-bold text-white">(555) 676-7677</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <!-- PAGE HERO BANNER -->
+        <section class="relative bg-navy-950 text-white py-16 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop" alt="Repair Bench Dispatch" class="w-full h-full object-cover opacity-20"/>
+                <div class="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-transparent"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col items-start space-y-4">
+                    <div class="flex items-center gap-2 text-xs font-heading uppercase tracking-wider text-slate-400">
+                        <a href="index.html" class="hover:text-accent">Home</a>
+                        <span>/</span>
+                        <span class="text-accent font-bold">Contact</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold uppercase text-white tracking-tight">
+                        CONTACT OUR <span class="text-accent">DISPATCH TEAM</span>
+                    </h1>
+                    <p class="text-slate-300 max-w-2xl text-sm sm:text-base leading-relaxed">
+                        Facing a liquid-damaged board, shattered display, or a disastrous DIY attempt? Drop a diagnostic ticket or visit our bench directly.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Wedge Divider -->
+            <div class="w-full h-8 bg-slate-50 slanted-card mt-12"></div>
+        </section>
+
+        <!-- MAIN CONTACT CONTENT GRID -->
+        <section class="py-12 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                    
+                    <!-- Left Info Column -->
+                    <div class="lg:col-span-5 space-y-6">
+                        
+                        <!-- Workshop Information Card -->
+                        <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-navy-900 space-y-6">
+                            <span class="bg-navy-900 text-accent font-heading font-bold uppercase text-xs px-3 py-1 rounded">Workshop Info</span>
+                            <h2 class="text-2xl font-extrabold text-navy-900 uppercase">VISIT OUR BENCH</h2>
+
+                            <div class="space-y-4 text-sm">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded bg-accent/20 border border-accent/40 text-navy-900 flex items-center justify-center flex-shrink-0 font-bold">
+                                        <i data-lucide="map-pin" class="w-5 h-5 text-navy-900"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-heading font-bold text-navy-900 uppercase text-base">Physical Location</h4>
+                                        <p class="text-slate-600 text-xs">67 Tech Plaza, Suite 400<br>Silicon District, NY 10001</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded bg-accent/20 border border-accent/40 text-navy-900 flex items-center justify-center flex-shrink-0 font-bold">
+                                        <i data-lucide="phone" class="w-5 h-5 text-navy-900"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-heading font-bold text-navy-900 uppercase text-base">Direct Hotline</h4>
+                                        <p class="text-slate-600 text-xs">(555) 676-7677<br>Mon - Sat: 8:00 AM - 7:00 PM</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded bg-accent/20 border border-accent/40 text-navy-900 flex items-center justify-center flex-shrink-0 font-bold">
+                                        <i data-lucide="mail" class="w-5 h-5 text-navy-900"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-heading font-bold text-navy-900 uppercase text-base">Support Inbox</h4>
+                                        <p class="text-slate-600 text-xs">support@prime67repair.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Humorous 1.5 Star Guarantee Banner -->
+                        <div class="bg-navy-900 text-white p-6 rounded-lg border-l-4 border-accent shadow-md space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="font-heading text-2xl font-bold text-accent">1.5 ★ RATING GUARANTEE</span>
+                                <div class="flex text-amber-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star-half" class="w-4 h-4 fill-amber-400"></i>
+                                    <i data-lucide="star" class="w-4 h-4 text-slate-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-300 leading-relaxed italic">
+                                "Our technical work is 5 stars, but our refusal to nod politely at obvious user errors keeps our public Google score at a solid 1.5. Bring us your broken hardware and test us yourself."
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Form Column -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-accent space-y-6">
+                            <div>
+                                <span class="bg-navy-900 text-accent font-heading font-bold uppercase text-xs px-3 py-1 rounded">Quick Booking</span>
+                                <h2 class="text-3xl font-extrabold text-navy-900 uppercase mt-2">SUBMIT A REPAIR TICKET</h2>
+                                <p class="text-slate-600 text-xs mt-1">Provide device details below and our bench techs will reply with diagnostic availability within 15 minutes.</p>
+                            </div>
+
+                            <form id="contact-form" class="space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Your Full Name</label>
+                                        <input type="text" placeholder="John Doe" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded focus:ring-2 focus:ring-navy-900 focus:outline-none text-sm"/>
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Email Address</label>
+                                        <input type="email" placeholder="john@example.com" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded focus:ring-2 focus:ring-navy-900 focus:outline-none text-sm"/>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Phone Number</label>
+                                        <input type="tel" placeholder="(555) 000-0000" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded focus:ring-2 focus:ring-navy-900 focus:outline-none text-sm"/>
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Service Category</label>
+                                        <select required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded focus:ring-2 focus:ring-navy-900 focus:outline-none text-sm">
+                                            <option value="">Select Service...</option>
+                                            <option value="micro">Micro Electronics Repair</option>
+                                            <option value="appliance">Appliance Diagnostics</option>
+                                            <option value="liquid">Liquid Damage Rescue</option>
+                                            <option value="diy">DIY Disaster Recovery</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Describe The Problem</label>
+                                    <textarea rows="4" placeholder="Be honest... did you try watching a YouTube tutorial first?" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded focus:ring-2 focus:ring-navy-900 focus:outline-none text-sm"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full bg-accent hover:bg-accent-hover text-navy-900 font-heading font-extrabold uppercase py-3.5 rounded shadow text-lg transition-colors flex items-center justify-center gap-2">
+                                    <span>Send Ticket To Bench</span>
+                                    <i data-lucide="send" class="w-4 h-4"></i>
+                                </button>
+                            </form>
+
+                            <div id="form-alert" class="hidden p-4 bg-emerald-100 border border-emerald-300 text-emerald-800 text-xs rounded font-medium text-center">
+                                ✔ Ticket Received! Prepare your device for diagnostic analysis.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-950 text-slate-300 pt-16 pb-8 border-t border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-navy-800">
+                
+                <!-- Col 1: Bio -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-accent rounded flex items-center justify-center text-navy-900 font-bold">67</div>
+                        <span class="font-heading font-extrabold text-2xl text-white">PRIME67</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Prime67 Repair Service is your trusted local micro-soldering and hardware overhaul shop. Fast, reliable, and completely transparent.
+                    </p>
+                    <div class="flex items-center gap-3 text-slate-400">
+                        <a href="#" class="w-8 h-8 rounded bg-navy-900 hover:bg-accent hover:text-navy-900 flex items-center justify-center transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                        <a href="#" class="w-8 h-8 rounded bg-navy-900 hover:bg-accent hover:text-navy-900 flex items-center justify-center transition-colors"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                        <a href="#" class="w-8 h-8 rounded bg-navy-900 hover:bg-accent hover:text-navy-900 flex items-center justify-center transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-white uppercase mb-4 border-l-2 border-accent pl-2">Quick Links</h4>
+                    <ul class="space-y-2 text-xs font-medium">
+                        <li><a href="index.html" class="hover:text-accent transition-colors">Home Page</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Our Repair Services</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition-colors">About Bench Team</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact & Directions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Info -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-white uppercase mb-4 border-l-2 border-accent pl-2">Contact Info</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-center gap-2"><i data-lucide="map-pin" class="text-accent w-4 h-4"></i> 67 Tech Plaza, Suite 400</li>
+                        <li class="flex items-center gap-2"><i data-lucide="phone" class="text-accent w-4 h-4"></i> (555) 676-7677</li>
+                        <li class="flex items-center gap-2"><i data-lucide="mail" class="text-accent w-4 h-4"></i> support@prime67repair.com</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Newsletter -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-white uppercase mb-4 border-l-2 border-accent pl-2">Newsletter</h4>
+                    <p class="text-xs text-slate-400 mb-3">Get quarterly tech maintenance tips and direct bench discounts.</p>
+                    <form id="newsletter-form" class="space-y-2">
+                        <input type="email" placeholder="Enter your email" required class="w-full px-3 py-2 bg-navy-900 border border-navy-800 rounded text-xs text-white focus:outline-none focus:border-accent"/>
+                        <button type="submit" class="w-full bg-accent hover:bg-accent-hover text-navy-900 font-heading font-bold uppercase py-2 rounded text-xs transition-colors">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Copyright Row -->
+            <div class="pt-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+                <p>© 2026 Prime67 Repair Service. All rights reserved.</p>
+                <div class="flex gap-4 mt-2 sm:mt-0">
+                    <a href="index.html" class="hover:text-slate-300">Privacy Policy</a>
+                    <a href="index.html" class="hover:text-slate-300">Terms of Bench Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla Script for Interactions -->
+    <script>
+        // Lucide Icons Render
+        lucide.createIcons();
+
+        // Mobile Nav Drawer Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Contact Form Handling
+        const contactForm = document.getElementById('contact-form');
+        const formAlert = document.getElementById('form-alert');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formAlert.classList.remove('hidden');
+            contactForm.reset();
+        });
+
+        // Newsletter Form Handling
+        const newsletterForm = document.getElementById('newsletter-form');
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Subscribed to Prime67 Repair Bulletins!');
+            newsletterForm.reset();
+        });
+    </script>
+</body>
+</html>
